@@ -11,6 +11,7 @@ class PlayerPagination(PageNumberPagination):
     page_size_query_param = 'page_size'
     max_page_size = 1000
 
+
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def get_players(request):
